@@ -1,0 +1,107 @@
+<!--<div class="position-fixed-div">
+  <section class="main-section">
+    <div class="first-section">
+      <div class="image-content">
+        <h1>We make technology accessible across platforms!</h1>
+        <p>DigitranIT Digitally Simple</p>
+      </div>
+      <div class="image-gif">
+        <img
+          src="https://media3.giphy.com/media/IcZhFmufozDCij3p22/giphy.gif?cid=790b76110b223759470a36d2c26348d957f569b70a4ac87f&rid=giphy.gif&ct=g"
+          alt="https://media3.giphy.com/media/IcZhFmufozDCij3p22/giphy.gif?cid=790b76110b223759470a36d2c26348d957f569b70a4ac87f&rid=giphy.gif&ct=g"
+        />
+      </div>
+    </div>
+  </section>
+</div> -->
+
+<section class="second-section">
+  <div class="card-div">
+    <div *ngFor="let data of datas">
+      <div class="card">
+        <img class="card-image" src="{{ data.image }}" alt="" />
+        <div class="card-content">
+          <h1>{{ data.title }}</h1>
+          <span class="card-span"></span>
+          <p>
+            {{ data.description }}
+          </p>
+          <button class="card-read-more-button">
+            <a href="#">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trusted-partners-section">
+  <div class="trusted-partners-div">
+    <h3>YOUR TRUSTED PARTNERS</h3>
+    <h1>EFFICIENT PARTNERS FOR AN EFFECTIVE BUSINESS</h1>
+  </div>
+  <div class="trusted-main-div" *ngFor="let partner of partners">
+    <div class="trust-content-main">
+      <div class="trusted-content">
+        <h1>
+          <span class="trusted-content-h1">01.</span><br />
+          <span class="performance-span">{{partner.title}}</span>
+        </h1>
+        <p>
+          {{partner.description}}
+        </p>
+      </div>
+      <div class="trusted-image">
+        <img
+          src={{partner.image}}
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us-section">
+  <div class="about-us">
+    <h3>About Us</h3>
+    <h1>SHAKING THINGS UP</h1>
+    <p>
+      DigitranIT Software Solutions is a digital transformation technology,
+      consulting, and solution implementation business led by IT industry
+      veterans with over two decades of expertise. <br /><br />
+
+      We have consultants with strong technical expertise in Pega BPM, Sales
+      Force CRM, Full stack (MERN, MEAN) web and app development, QA –
+      Automation testing, AWS and Google Cloud SAAS platforms, assisting
+      domestic and international customers with business technology
+      consolidation and transformation initiatives.
+    </p>
+  </div>
+  <div class="about-us-contact">
+    <!-- <img src="./images/logos/DigitranIT_logo_light.png" alt=""> -->
+    <a href="#">You got a problem</a>
+    <p>We have a solution</p>
+  </div>
+</section>
+
+<section class="leadership-section">
+  <h1>Leadership</h1>
+  <div class="leadership-section-div">
+    <p>
+      As Chief Executive Officer (CEO), Mr. P. Sriram, a successful
+      first-generation entrepreneur, created and leads our leadership team.
+    </p>
+    <p>
+      Mr.R.Vijay is a highly renowned Solutions-Oriented IT Software Director
+      with over 15 years of progressive experience as Chief Technology Officer
+      (CTO) delivering sustainably scalable business transformation solutions
+      for several business verticals across worldwide big customers.
+    </p>
+    <p>
+      As Chief Operating Officer (COO), Dr. Balamurali has more than a decade of
+      expertise in resource capacity development and outsourcing qualified top
+      skilled personnel for project assignments with service integration firms
+      as well as for global client base - business verticals.
+    </p>
+  </div>
+</section>

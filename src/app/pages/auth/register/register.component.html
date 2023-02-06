@@ -43,6 +43,7 @@
                 type="email"
                 name="email"
                 placeholder="abc@gmail.com"
+                [(ngModel)]="email"
                 required
               />
             </div>
@@ -59,6 +60,7 @@
                 type="password"
                 name="password"
                 placeholder="******************"
+                [(ngModel)]="password"
                 required
               />
             </div>
@@ -75,6 +77,7 @@
                 type="password"
                 name="rePassword"
                 placeholder="******************"
+                [(ngModel)]="rePassword"
                 required
               />
             </div>
@@ -82,6 +85,7 @@
               <button
                 class="w-full px-4 py-2 font-bold text-white bg-[#52796F] rounded-full hover:bg-[#354F52] focus:outline-none focus:shadow-outline"
                 type="button"
+                (click)="register()"
               >
                 Sign In
               </button>
@@ -90,6 +94,7 @@
               <button
                 class="w-full px-4 py-2 font-bold text-white bg-[#52796F] rounded-full hover:bg-[#354F52] focus:outline-none focus:shadow-outline"
                 type="button"
+                (click)="auth.GoogleAuth()"
               >
                 Sign In With Google
               </button>
