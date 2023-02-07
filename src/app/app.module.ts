@@ -8,7 +8,7 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
-import { Template1Component } from './pages/templates/template1/template1.component';
+import { Template1Component } from './pages/temp/template1/template1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { Template1Component } from './pages/templates/template1/template1.compon
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    Template1Component,
+    Template1Component
   ],
   imports: [
     BrowserModule,
